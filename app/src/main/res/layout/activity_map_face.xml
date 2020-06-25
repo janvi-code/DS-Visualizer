@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mapFace"
+    >
+
+    <Button
+        android:id="@+id/key"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Key"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
+        android:background="#273036"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/keyValue"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="28dp"
+        />
+    <Button
+        android:id="@+id/pair"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Value"
+        app:layout_constraintTop_toBottomOf="@id/key"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
+        android:background="#273036"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/pairValue"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/keyValue"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="15dp"
+        />
+    <Button
+        android:id="@+id/add"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Add"
+        app:layout_constraintTop_toBottomOf="@id/pair"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="130dp"
+        android:background="#273036"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toBottomOf="@id/add"
+    android:layout_marginTop="270dp"
+    android:id="@+id/addElementsLayout"
+        android:clipToPadding="false"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

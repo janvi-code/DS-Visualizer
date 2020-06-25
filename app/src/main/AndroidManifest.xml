@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="android.example.visualizer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".mergeSort"
+            android:label="Merge Sort"
+            android:parentActivityName=".sortingFace"
+            ></activity>
+        <activity
+            android:name=".quickSort"
+            android:label="Quick Sort"
+            android:parentActivityName=".sortingFace" />
+        <activity
+            android:name=".selectionSort"
+            android:label="Selection Sort"
+            android:parentActivityName=".sortingFace" />
+        <activity
+            android:name=".insertionSort"
+            android:label="Insertion Sort"
+            android:parentActivityName=".sortingFace" />
+        <activity
+            android:name=".binarySearchTree"
+            android:label="Binary Search Tree"
+            android:parentActivityName=".treeFace" />
+        <activity
+            android:name=".binaryTree"
+            android:label="Binary Tree"
+            android:parentActivityName=".treeFace" />
+        <activity
+            android:name=".treeMap"
+            android:label="Tree Map"
+            android:parentActivityName=".mapStart" />
+        <activity
+            android:name=".mapStart"
+            android:label="Map Algorithms"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".graphFace"
+            android:label="Graph"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".treeFace"
+            android:label="Tree"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mapFace"
+            android:label="Hash Map"
+            android:parentActivityName=".mapStart" />
+        <activity
+            android:name=".setFace"
+            android:label="Set"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".bubbleSort"
+            android:label="Bubble Sort"
+            android:parentActivityName=".sortingFace" />
+        <activity
+            android:name=".sortingFace"
+            android:label="Sorting Algorithms"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
